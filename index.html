@@ -1,10 +1,21 @@
 
-<!doctype HTML>
+<!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
 	<title>네이버 로그인</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/51db22a717.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+	
+	function fun1(){
+		const element = document.getElementById("fun1");
+		const element2 = document.getElementById("fun2");
+		alert(element.value);
+		alert(element2.value);		
+	}
+	</script>
+
+
 </head>
 <body>
 	<div class="main-container">
@@ -23,19 +34,22 @@
 			</div>
 		</header>
 		<section class="login-input-section-wrap">
-			<div class="login-input-wrap">	
-				<input placeholder="아이디" type="text"></input>
+			<div  class="login-input-wrap">	
+				<input placeholder="아이디" type="text" id="fun1" ></input>
 			</div>
 			<div class="login-input-wrap password-wrap">	
-				<input placeholder="비밀번호" type="password"></input>
+				<input placeholder="비밀번호" type="password" id="fun2"></input>
 			</div>
 			<div class="login-stay-sign-in">
 				<i class="far fa-check-circle"></i>
 				<span>로그인 상태 유지</span>
 			</div>
 			<div class="login-button-wrap">
-				<a href="www.naver.com" onclick="alert('로그인 접속이동')"><button>로그인</button></a>
+			
+			<a href="www.naver.com" onclick="fun1()""><button>로그인</button></a>
 			</div>
+			
+			
 			
 		</section>
 		<section class="Easy-sgin-in-wrap">
@@ -56,3 +70,4 @@
 		</div>
 	</div>
 </body>
+</html>
